@@ -1,0 +1,77 @@
+#heading{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #allCryptoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+} */
+
+#allCryptoContainer{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.singularCrypto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid goldenrod;
+}
+.singularCrypto:hover{
+    background-color: gray;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+
+
+
+.logoImage{
+    animation: spin 2s infinite ease-in-out alternate;
+    height: 50px;
+    object-fit: contain;
+}
+
+.PriceContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.priceChangeColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.priceChange{
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    height: fit-content;
+    margin: 0;
+}
+
+.green-bg{
+    background: green;
+    border-radius: 5px;
+}
+
+.red-bg{
+    background: red;
+    border-radius: 5px;
+}
